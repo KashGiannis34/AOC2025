@@ -6,7 +6,7 @@ My solutions for [Advent of Code 2025](https://adventofcode.com/2025) puzzles, w
 
 | Day | Part 1 | Part 2 |
 |-----|--------|--------|
-| 1   | ⭐     |        |
+| 1   | ⭐     | ⭐       |
 
 ## Solutions
 

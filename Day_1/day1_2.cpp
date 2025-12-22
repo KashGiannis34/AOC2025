@@ -20,15 +20,20 @@ int main()
     while (std::getline(inputFile, line)) {
         std::string dir = line.substr(0, 1);
         int diff = std::stoi(line.substr(1));
+        int mult = (dir == "L" ? -1: 1); // -1 = left, 1 = right
+        int thresh = (dir == "L" ? 0: 100); // 0 = left, 100 = right
 
-        if (dir == "L") {
-            currVal = (currVal - diff + 100) % 100;
+        if (diff + currVal*mult >= thresh) {
+            if (currVal != 0) {
+                code++;
+                diff -= (thresh - currVal*mult);
+                currVal = 0;
+            }
+
+            code += (diff / 100);
+            currVal = (diff*mult % 100 + 100) % 100;
         } else {
-            currVal = (currVal + diff) % 100;
-        }
-
-        if (currVal == 0) {
-            code++;
+            currVal += (diff * mult);
         }
     }
 
