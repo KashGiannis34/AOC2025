@@ -41,4 +41,7 @@ int main() {
         total += maxVoltage(line);
     }
     std::cout << total << std::endl;
+    inputFile.close();
+
+    return 0;
 }

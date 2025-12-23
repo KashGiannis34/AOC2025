@@ -33,6 +33,7 @@ int main()
     }
 
     std::cout << code << std::endl;
+    inputFile.close();
 
     return 0;
 }

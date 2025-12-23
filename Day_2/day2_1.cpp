@@ -53,6 +53,7 @@ int main() {
     sum += sumInvalidIds(ranges.substr(startPos, index - startPos));
 
     std::cout << sum << std::endl;
+    inputFile.close();
 
     return 0;
 }
