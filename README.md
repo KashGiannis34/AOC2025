@@ -8,6 +8,7 @@ My solutions for [Advent of Code 2025](https://adventofcode.com/2025) puzzles, w
 |-----|--------|--------|
 | 1   | ⭐     | ⭐     |
 | 2   | ⭐     | ⭐     |
+| 3   | ⭐     | ⭐     |
 
 ## Solutions
 
@@ -28,6 +29,16 @@ My solutions for [Advent of Code 2025](https://adventofcode.com/2025) puzzles, w
 |:----:|-------------|
 | ⭐ | Finds mirror IDs (numbers that read the same when split in half, like `1212`) within given ranges and sums them. |
 | ⭐⭐ | Extends Part 1 to find all repeating pattern numbers where a prefix repeats to form the entire number (ex: `123123`, `7777`) and sums them. |
+
+</details>
+
+<details>
+<summary>🎄 Day 3: Max Voltage</summary>
+
+| Part | Description |
+|:----:|-------------|
+| ⭐ | Finds the max 2 digit voltage by picking the largest digit and the largest remaining digit after it from each line. |
+| ⭐⭐ | Extends to 12 digits: greedily selects the largest available digit at each position while making sure enough digits are left for the rest. |
 
 </details>
 
