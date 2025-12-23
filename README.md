@@ -9,6 +9,7 @@ My solutions for [Advent of Code 2025](https://adventofcode.com/2025) puzzles, w
 | 1   | ⭐     | ⭐     |
 | 2   | ⭐     | ⭐     |
 | 3   | ⭐     | ⭐     |
+| 4   | ⭐     | ⭐     |
 
 ## Solutions
 
@@ -39,6 +40,16 @@ My solutions for [Advent of Code 2025](https://adventofcode.com/2025) puzzles, w
 |:----:|-------------|
 | ⭐ | Finds the max 2 digit voltage by picking the largest digit and the largest remaining digit after it from each line. |
 | ⭐⭐ | Extends to 12 digits: greedily selects the largest available digit at each position while making sure enough digits are left for the rest. |
+
+</details>
+
+<details>
+<summary>🎄 Day 4: Printing Department</summary>
+
+| Part | Description |
+|:----:|-------------|
+| ⭐ | Counts the number of filled entries that have fewer than 4 neighboring filled entries. |
+| ⭐⭐ |  Continues removing cells with fewer than than 4 neighbors until stability is reached, counting the total removed. |
 
 </details>
 
