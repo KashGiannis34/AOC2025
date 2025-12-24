@@ -11,6 +11,7 @@ My solutions for [Advent of Code 2025](https://adventofcode.com/2025) puzzles, w
 | 3   | ⭐     | ⭐     |
 | 4   | ⭐     | ⭐     |
 | 5   | ⭐     | ⭐     |
+| 6   | ⭐     | ⭐     |
 
 ## Solutions
 
@@ -64,3 +65,15 @@ My solutions for [Advent of Code 2025](https://adventofcode.com/2025) puzzles, w
 
 </details>
 
+<details>
+<summary>🎄 Day 6: Trash Compactor</summary>
+
+| Part | Description |
+|:----:|-------------|
+| ⭐ | Adds or multiplies the numbers in a given columns and sums up all of
+the resulting values. I use input stream to find the numbers in each row,
+store these values in a vector, and sum the results of all the problems. |
+| ⭐⭐ | Completes the same problems, but the numbers are displayed vertically
+instead of horizontally. I store all the lines of input as strings and iterate from left to right by column to determine each number. |
+
+</details>
