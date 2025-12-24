@@ -25,6 +25,7 @@ int main() {
             break;
         }
     }
+    inputFile.close();
 
     std::sort(ranges.begin(), ranges.end(), [](const std::vector<long long> &a, const std::vector<long long> &b) {
         return a[0] < b[0];

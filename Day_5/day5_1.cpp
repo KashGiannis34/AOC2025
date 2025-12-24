@@ -35,6 +35,7 @@ int main() {
     while (inputFile >> id) {
         ids.push_back(id);
     }
+    inputFile.close();
     std::sort(ids.begin(), ids.end());
 
     int i = 0;
