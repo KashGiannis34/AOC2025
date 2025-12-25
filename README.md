@@ -12,6 +12,7 @@ My solutions for [Advent of Code 2025](https://adventofcode.com/2025) puzzles, w
 | 4   | ⭐     | ⭐     |
 | 5   | ⭐     | ⭐     |
 | 6   | ⭐     | ⭐     |
+| 7   | ⭐     | ⭐     |
 
 ## Solutions
 
@@ -75,5 +76,15 @@ the resulting values. I use input stream to find the numbers in each row,
 store these values in a vector, and sum the results of all the problems. |
 | ⭐⭐ | Completes the same problems, but the numbers are displayed vertically
 instead of horizontally. I store all the lines of input as strings and iterate from left to right by column to determine each number. |
+
+</details>
+
+<details>
+<summary>🎄 Day 7: Laboratories</summary>
+
+| Part | Description |
+|:----:|-------------|
+| ⭐ | Simulates propagation from the starting column marked `S` down the rows; each time a splitter is reached the flow splits into left and right branches. The program counts how many split events occur while scanning the map. |
+| ⭐⭐ | Counts the total number of distinct ways the flow can reach the bottom using recursive DFS with memoization. When a splitter is reached, the path splits. Otherwise, it continues straight down. The solution returns the number of paths to the final row. |
 
 </details>
