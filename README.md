@@ -13,6 +13,7 @@ My solutions for [Advent of Code 2025](https://adventofcode.com/2025) puzzles, w
 | 5   | ⭐     | ⭐     |
 | 6   | ⭐     | ⭐     |
 | 7   | ⭐     | ⭐     |
+| 8   | ⭐     | ⭐     |
 
 ## Solutions
 
@@ -86,5 +87,15 @@ instead of horizontally. I store all the lines of input as strings and iterate f
 |:----:|-------------|
 | ⭐ | Simulates propagation from the starting column marked `S` down the rows; each time a splitter is reached the flow splits into left and right branches. The program counts how many split events occur while scanning the map. |
 | ⭐⭐ | Counts the total number of distinct ways the flow can reach the bottom using recursive DFS with memoization. When a splitter is reached, the path splits. Otherwise, it continues straight down. The solution returns the number of paths to the final row. |
+
+</details>
+
+<details>
+<summary>🎄 Day 8: Playground</summary>
+
+| Part | Description |
+|:----:|-------------|
+| ⭐ | Connects the junction boxes with the smallest distances using a min heap to form edges in an undirected graph. After building the graph the solution performs DFS to find connected components, collects their sizes in a max heap, and multiplies the sizes of the three largest components. |
+| ⭐⭐ | Continues connecting the closest unconnected pairs until all junction boxes are in a single connected component. The program greedily pops edges by distance and adds them to the graph, checking connectivity using DFS. When the final connection unites all boxes, it multiplies the x values of the 2 boxes. |
 
 </details>
